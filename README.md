@@ -31,4 +31,5 @@ The code will be intended for UNIX-based systems
 
 ###### Create the socket
 A socket, ```server_fd```, is created with the *socket* system call:  
+
 ```int server_fd = socket(domain, type, protocol)```
