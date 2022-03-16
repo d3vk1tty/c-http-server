@@ -29,7 +29,28 @@ The code will be intended for UNIX-based systems
 4. Send and receive messages 
 5. Close the socket
 
-###### Create the socket
-A socket, ```server_fd```, is created with the *socket* system call:  
+## Building
 
-```int server_fd = socket(domain, type, protocol)```
+```bash
+gcc server.c -o server
+gcc client.c -o client
+./server
+./client
+```
+
+```output
+$ ./server
+
++++++++ Waiting for new connection ++++++++
+
+Hello from client
+------------------Hello message sent-------------------
+
++++++++ Waiting for new connection ++++++++
+```
+
+```
+$ ./client
+Hello message sent
+Hello from server
+```
