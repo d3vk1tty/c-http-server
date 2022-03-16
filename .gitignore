@@ -1,2 +1,2 @@
-#ignore o files
-*.o
+#ignore out files
+*.out
